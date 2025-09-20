@@ -1,3 +1,3 @@
-# Project Title
+# curso devops
 
-A brief description of what this project does and who it's for
+este es el curso de programacion
