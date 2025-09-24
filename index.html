@@ -1,12 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Landing page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Landing Page</h1>
+    <a class="skip-to-content" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+        <div class="container">
+            <nav class="nav" aria-label="Principal">
+                <ul class="nav-list">
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#programa">Programa</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido" class="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container grid-2">
+                <div class="hero__copy">
+                    <h1 id="hero-title" class="display">Impulsa tu carrera con un programa intensivo y práctico</h1>
+                    <p class="lead">Mentoría personalizada, proyectos reales y una comunidad que te acompaña. Inscríbete
+                        hoy y da el siguiente paso con confianza.</p>
+                    <div class="cta-group">
+                        <a id="registro" class="btn" href="#form">Comenzar ahora</a>
+                        <a class="btn btn--ghost" href="#programa">Ver el programa</a>
+                    </div>
+                </div>
+                <figure class="hero__media">
+                    <img src="/photo-1542744173-8e7e53415bb0.png" alt="">
+                </figure>
+            </div>
+        </section>
+
+        <section id="beneficios" class="section" aria-labelledby="beneficios-title">
+            <div class="container">
+                <h2 id="beneficios-title" class="h2">Lo que obtendrás</h2>
+                <ul class="features">
+                    <li class="feature">
+                        <div class="icon" aria-hidden="true"></div>
+                        <h3 class="h3">Aprendizaje enfocado</h3>
+                        <p>Currícula clara y progresiva para dominar lo esencial sin ruido.</p>
+                    </li>
+                    <li class="feature">
+                        <div class="icon" aria-hidden="true"></div>
+                        <h3 class="h3">Mentoría real</h3>
+                        <p>Sesiones en vivo y feedback práctico para acelerar tu avance.</p>
+                    </li>
+                    <li class="feature">
+                        <div class="icon" aria-hidden="true"></div>
+                        <h3 class="h3">Proyectos aplicados</h3>
+                        <p>Construye un portafolio con problemas del mundo real.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="programa" class="section section--alt" aria-labelledby="programa-title">
+            <div class="container grid-2">
+                <div>
+                    <h2 id="programa-title" class="h2">Un programa pensado para ti</h2>
+                    <ul class="list-check">
+                        <li>Fundamentos sólidos con buenas prácticas.</li>
+                        <li>Desarrollo guiado por casos reales.</li>
+                        <li>Herramientas y procesos de industria.</li>
+                        <li>Red de contactos y oportunidades.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <p class="eyebrow">Testimonio</p>
+                    <blockquote class="quote">
+                        “En 12 semanas pasé de la teoría a conseguir mi primer proyecto freelance. La mentoría fue
+                        clave.”
+                    </blockquote>
+                    <p class="attribution">— Ana M., Egresada 2024</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
