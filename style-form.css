@@ -1,0 +1,48 @@
+form {
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form h1 {
+    color: rgb(5, 43, 46);
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form div input{
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid rgb(41, 198, 209);
+}
+
+form div label {
+    color: rgb(5, 43, 46);
+    font-weight: bold;
+}
+
+form button {
+    width: 100px;
+    margin: 0 auto;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 5px;
+    transition: .5s;
+    cursor: pointer;
+
+    &:hover {
+        background: #08f;
+    }
+}
