@@ -1,18 +1,18 @@
 :root {
-    --bg: #FAF6F3;
-    --surface: #FFFDFC;
-    --text: #2E1F1A;
-    --muted: #6F5B54;
-    --primary: #C66A3D;
-    /* terracota */
-    --primary-600: #B25E35;
-    --accent: #7A9E7E;
-    /* salvia */
-    --accent-600: #698E6E;
-    --highlight: #D4A373;
-    /* dorado suave */
-    --ring: #C66A3D55;
-    --shadow: 0 10px 30px rgba(46, 31, 26, 0.12);
+    --bg: #000000;
+    --surface: #1a1a1a;
+    --text: #ffffff;
+    --muted: #b0b0b0;
+    --primary: #ff6b35;
+    /* terracota más vibrante */
+    --primary-600: #e55a2b;
+    --accent: #4ade80;
+    /* verde más brillante */
+    --accent-600: #22c55e;
+    --highlight: #fbbf24;
+    /* dorado más brillante */
+    --ring: #ff6b3555;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     --radius: 14px;
     --radius-lg: 20px;
 }
@@ -35,9 +35,7 @@ body {
     margin: 0;
     font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
     color: var(--text);
-    background: radial-gradient(1200px 600px at 10% -10%, #fdefe8 0%, transparent 60%),
-        radial-gradient(1200px 600px at 110% 10%, #f2f0ee 0%, transparent 60%),
-        var(--bg);
+    background: var(--bg);
     line-height: 1.6;
 }
 
@@ -116,9 +114,9 @@ img {
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(250, 246, 243, 0.75);
+    background: rgba(0, 0, 0, 0.9);
     backdrop-filter: saturate(150%) blur(8px);
-    border-bottom: 1px solid #eee2;
+    border-bottom: 1px solid #333;
 }
 
 .nav {
@@ -156,8 +154,8 @@ img {
 }
 
 .nav-list a:hover {
-    background: #0000000f;
-    color: var(--primary-600);
+    background: #ffffff20;
+    color: var(--primary);
 }
 
 /* Evitar solape del header fijo con el contenido principal */
@@ -238,8 +236,8 @@ img {
 }
 
 .section--alt {
-    background: linear-gradient(180deg, #fff 0%, #fff9f6 100%);
-    border-block: 1px solid #eee6;
+    background: linear-gradient(180deg, #111 0%, #1a1a1a 100%);
+    border-block: 1px solid #333;
 }
 
 .features {
@@ -253,7 +251,7 @@ img {
 
 .feature {
     background: var(--surface);
-    border: 1px solid #eee7;
+    border: 1px solid #333;
     border-radius: var(--radius);
     padding: 1.2rem;
     box-shadow: var(--shadow);
@@ -265,7 +263,7 @@ img {
     display: grid;
     place-items: center;
     border-radius: 12px;
-    background: #fff3;
+    background: #ffffff10;
     color: var(--primary);
     font-size: 1.2rem;
     margin-bottom: .6rem;
@@ -293,14 +291,14 @@ img {
     width: 1.1rem;
     height: 1.1rem;
     border-radius: 50%;
-    background: conic-gradient(var(--accent) 0 75%, #e0e0e0 75% 100%);
-    box-shadow: inset 0 0 0 4px #fff;
+    background: conic-gradient(var(--accent) 0 75%, #444 75% 100%);
+    box-shadow: inset 0 0 0 4px var(--surface);
 }
 
 /* Card / Testimonio */
 .card {
     background: var(--surface);
-    border: 1px solid #eee7;
+    border: 1px solid #333;
     border-radius: var(--radius);
     padding: 1.2rem;
     box-shadow: var(--shadow);
@@ -332,13 +330,13 @@ input[type="text"],
 input[type="email"] {
     padding: .9rem 1rem;
     border-radius: .8rem;
-    border: 1.5px solid #e6ded9;
-    background: #fff;
+    border: 1.5px solid #444;
+    background: var(--surface);
     color: var(--text);
 }
 
 input::placeholder {
-    color: #b7a9a3;
+    color: #666;
 }
 
 input:focus {
@@ -356,7 +354,7 @@ summary {
 
 details {
     background: var(--surface);
-    border: 1px solid #eee7;
+    border: 1px solid #333;
     border-radius: var(--radius);
     padding: .8rem 1rem;
     box-shadow: var(--shadow);
@@ -364,13 +362,13 @@ details {
 }
 
 details[open] {
-    border-color: #e0d6d1;
+    border-color: #555;
 }
 
 /* Footer */
 .site-footer {
     padding: 2rem 0;
-    border-top: 1px solid #eee6;
+    border-top: 1px solid #333;
 }
 
 .footer-grid {
